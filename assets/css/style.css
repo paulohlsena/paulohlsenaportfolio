@@ -93,7 +93,7 @@ header{
 
 .menu-mobile{
     display: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     position: absolute;
     top: 100px;
@@ -284,11 +284,20 @@ main{
     width: 100px;
     height: 100px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .conhecimento-icon div img{
     width: 80px;
     height: 80px;
 }
+
+.conhecimento-icon div img:hover{
+    width: 90px;
+    height: 90px;
+}
+
 .conhecimento-desc{
     flex: 1;
     display: flex;
@@ -296,19 +305,30 @@ main{
     flex-direction: column;
     justify-content: space-around;
 }
-.conhecimentos-desc-title h1{
+.conhecimentos-desc-title div{
     color: var(--primary-color);
     font-size: 25px;
     font-weight: 100;
 }
-.conhecimentos-desc-text p{
+.conhecimentos-desc-text div{
     color: var(--primary-color);
     font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
 }
 .conhecimentos-desc-nivel{
-    width: 100%;
-    height: 15px;
-    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conhecimentos-desc-nivel p{
+    color: #FFF;
+}
+.conhecimentos-desc-nivel progress{
+    height: 50px;
+    width: 300px;
+    color: #000;
 }
 
 
