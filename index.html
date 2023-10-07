@@ -18,6 +18,7 @@
     <script src="assets/js/scriptmenu.js" defer></script>
     <script src="assets/js/scriptlogo.js" defer></script>
     <script src="assets/js/scriptfundo.js" defer></script>
+    <script src="assets/js/scriptskills.js" defer></script>
     <!--icons-->
     <script
       type="module"
@@ -117,23 +118,24 @@
                 <div class="conhecimentos-area">
                     <div class="conhecimentos-space">
                         <div class="conhecimento-icon">
-                            <div class="iconhtml"><img src="assets/image/html.png" alt=""></div>
-                            <div class="iconcss"><img src="assets/image/css.png" alt=""></div>
-                            <div class="iconjs"><img src="assets/image/js.png" alt=""></div>
-                            <div class="iconreact"><img src="assets/image/react.png" alt=""></div>
-                            <div class="iconts"><img src="assets/image/typescript.png" alt=""></div>
+                            <div class="iconhtml" onclick="infohtml()"><img src="assets/image/html.png" alt=""></div>
+                            <div class="iconcss" onclick="infocss()"><img src="assets/image/css.png" alt=""></div>
+                            <div class="iconjs" onclick="infojs()"><img src="assets/image/js.png" alt=""></div>
+                            <div class="iconreact" onclick="inforeact()"><img src="assets/image/react.png" alt=""></div>
+                            <div class="iconts" onclick="infots()"><img src="assets/image/typescript.png" alt=""></div>
                             
                         </div>
                     </div>    
                     <div class="conhecimento-desc">
                         <div class="conhecimentos-desc-title">
-                            <h1>titulo de exemplo</h1>
+                            <div id="conhecimentotitle">HTML 5</div>
                         </div>
                         <div class="conhecimentos-desc-text">
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                            <div  id="conhecimentodesc">HTML5 é a quinta versão do padrão HTML para criação de páginas web. Ele introduz elementos semânticos como &lt;header&gt;, &lt;footer&gt; e suporte nativo para áudio e vídeo com as tags &lt;audio&gt; e &lt;video&gt;. Além disso, oferece APIs para geolocalização e armazenamento local de dados, simplifica a validação de formulários e permite gráficos e animações com &lt;canvas&gt; e &lt;svg&gt;. Sua flexibilidade e funcionalidades avançadas tornam-no essencial para o desenvolvimento web moderno.</div>
                         </div>
-                        <div class="conhecimentos-desc-nivel">
-        
+                        <div class="conhecimentos-desc-nivel" id="conhecimentonivel">
+                            <p>Nível</p>
+                            <progress value="70" max="100" id="progress"></progress>
                         </div>
                     </div>
                 </div>
